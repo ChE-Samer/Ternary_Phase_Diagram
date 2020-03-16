@@ -9,6 +9,7 @@ Read the tri_example.m file and run to see the different functions and features 
 
 # Examples
 clear
+
 clc
 
 %% define different relations
