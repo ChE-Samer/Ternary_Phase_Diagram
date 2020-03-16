@@ -80,6 +80,8 @@ tri_surf(p_vap,11);
 
 % tri_isotherm(z, n, grid, a)
 
+% where,
+
 % z:         temperature of the isothermal section
 
 % n:         number of points in the range 0:1
