@@ -1,4 +1,4 @@
-function Z = tri_surf(func, n)
+function [Z,x,y,z] = tri_surf(func, n)
     % square x-y mesh
     [x, y] = meshgrid(linspace(0,1,n));
     x_a = x;
@@ -38,5 +38,7 @@ function Z = tri_surf(func, n)
     Z.EdgeAlpha = 0;
     cb = colorbar;
     set(cb,'Ylim', [floor(min(min(z))/10)*10 ceil(max(max(z))/10)*10])
+    caxis([floor(min(min(z))/10)*10 ceil(max(max(z))/10)*10]);
+    colormap jet;
     view([0 30])
 end
