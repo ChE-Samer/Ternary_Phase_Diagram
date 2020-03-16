@@ -11,9 +11,6 @@ Read the tri_example.m file and run to see the different functions and features 
 
 
 # Examples
-clear
-
-clc
 
 
 %% define different relations
@@ -55,24 +52,24 @@ p_vap = @(x_a,x_b,x_c,T) 1000*(1/760 - (x_a./p_a(T) + x_b./p_b(T) + x_c./p_c(T))
 
 % where,
 
-% n         number of points in the range 0:1
+% n:         number of points in the range 0:1
 
-% z_max     maximum value of the Z/vertical axis
+% z_max:     maximum value of the Z/vertical axis
 
-% grid      bolean (true/false) for showing grid on the ternary traingle
+% grid:      bolean (true/false) for showing grid on the ternary traingle
 
 tri_base(11, 120, true);
 
 
 %% plot liquidus and vaporus surfaces
 
-% tri_surf(func,n)
+% tri_surf(func, n)
 
 % where,
 
-% func      surface function with arguments @(x_a, x_b, x_c, T)
+% func:      surface function with arguments @(x_a, x_b, x_c, T)
 
-% n         number of points in the range 0:1
+% n:         number of points in the range 0:1
 
 tri_surf(p_liq,11);
 
@@ -81,12 +78,14 @@ tri_surf(p_vap,11);
 
 %% plot an isotherm
 
-% z         temperature of the isothermal section
+% tri_isotherm(z, n, grid, a)
 
-% n         number of points in the range 0:1
+% z:         temperature of the isothermal section
 
-% grid      bolean (true/false) for showing grid on the isotherm
+% n:         number of points in the range 0:1
 
-% a         surface opacity of isothermal section (value betwen 0:1)
+% grid:      bolean (true/false) for showing grid on the isotherm
+
+% a:         surface opacity of isothermal section (value betwen 0:1)
 
 tri_isotherm(80,11,false,0.8);
