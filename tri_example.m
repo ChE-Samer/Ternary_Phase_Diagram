@@ -30,7 +30,7 @@ tri_base(11, 120, true);
 
 
 %% plot liquidus and vaporus surfaces
-% tri_surf(func,n)
+% tri_surf(func, n)
 % where,
 % func      surface function with arguments @(x_a, x_b, x_c, T)
 % n         number of points in the range 0:1
@@ -39,6 +39,8 @@ tri_surf(p_vap,11);
 
 
 %% plot an isotherm
+% tri_isotherm(z, n, grid, a)
+% where,
 % z         temperature of the isothermal section
 % n         number of points in the range 0:1
 % grid      bolean (true/false) for showing grid on the isotherm
