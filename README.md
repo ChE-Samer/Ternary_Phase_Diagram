@@ -13,7 +13,7 @@ Read the tri_example.m file and run to see the different functions and features 
 # Examples
 
 
-`%% define different relations`
+`%% define different relations
 
 % The system calcluated here is Water-Ethanol-Acetone 
 
@@ -90,4 +90,4 @@ tri_surf(p_vap,11);
 
 % a:         surface opacity of isothermal section (value betwen 0:1)
 
-tri_isotherm(80,11,false,0.8);
+tri_isotherm(80,11,false,0.8);`
