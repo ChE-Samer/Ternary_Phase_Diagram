@@ -43,7 +43,7 @@ Try to calculate the system using a non-ideal model (e.g. Wilson) to appreciate 
 
 ## Create an empty ternary plot
 
-### tri_base(n, z_max, grid)
+### >> tri_base(n, z_max, grid)
 
 where,
 
@@ -58,7 +58,7 @@ grid: boolean (true/false) for showing grid on the ternary triangle
 
 ## Plot liquidus and vaporus surfaces
 
-### tri_surf(func, n)
+### >> tri_surf(func, n)
 
 where,
 
@@ -73,7 +73,7 @@ n: number of points in the range 0:1
 
 ## Plot an isotherm
 
-### tri_isotherm(z, n, grid, a)
+### >> tri_isotherm(z, n, grid, a)
 
 where,
 
@@ -81,7 +81,7 @@ z: temperature of the isothermal section
 
 n: number of points in the range 0:1
 
-grid: bolean (true/false) for showing grid on the isotherm
+grid: boolean (true/false) for showing grid on the isotherm
 
 a: surface opacity of isothermal section (value betwen 0:1)
 
