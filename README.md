@@ -13,7 +13,7 @@ Read the tri_example.m file and run to see the different functions and features 
 # Examples
 
 
-%% define different relations
+`%% define different relations`
 
 % The system calcluated here is Water-Ethanol-Acetone 
 
